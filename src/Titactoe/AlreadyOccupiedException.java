@@ -1,2 +1,7 @@
-package Titactoe;public class AlreadyOccupiedException {
+package Titactoe;
+
+
+
+public class AlreadyOccupiedException extends Exception {
+
 }

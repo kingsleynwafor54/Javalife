@@ -1,2 +1,4 @@
-package Titactoe;public class GameOverExceptions {
+package Titactoe;
+
+public class GameOverExceptions extends Exception {
 }
