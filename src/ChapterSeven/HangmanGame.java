@@ -42,13 +42,14 @@ public class HangmanGame {
             for (int count = 0; count < array.length; count++)
                 System.out.print(array[count] + " ");
             System.out.println();
-            System.out.println("You have " + (secondArrays.length - counter1) + "miss(es)");
+            System.out.println("You have " + (array.length - counter1) + "miss(es)");
 
-            System.out.println("Please type "+"yes"+"to continue the game");
+            System.out.println("Please type "+"yes"+" to continue the game");
             String yes = scanner.next();
             if (yes.equals("yes")) {
                 c++;
             } else c = -1;
+
         }
     }
     public static void main(String[] args) {

@@ -45,6 +45,7 @@ public static boolean displayDistinctNumbers(int[] arrays,int score) {
     }
     return false;
 }
+
     public static void main(String[] args) {
         int[] randomLetters = {2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0};
 //        System.out.println(Arrays.toString(countLetters(randomLetters)));
