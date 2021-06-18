@@ -7,18 +7,16 @@ public class Laptop {
     private String laptopOwner;
 
     private static int laptopNumber;
-    private int laptopMake;
+
 
 
 
 
     public Laptop(String laptopOwner){
-        laptopMake=++laptopNumber;
+        int  laptopMake=++laptopNumber;
         this.laptopOwner=laptopOwner;
 
     }
-
-
 
     public String getLaptopOwner() {
         return laptopOwner;
@@ -31,10 +29,6 @@ public class Laptop {
     public  int getLaptopNumber() {
         return laptopNumber;
     }
-
-//    public  void setLaptopNumber(int laptopNumber) {
-//        Laptop.laptopNumber = laptopNumber;
-//    }
 
     @Override
     public String toString() {

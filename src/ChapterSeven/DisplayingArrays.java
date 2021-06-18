@@ -10,8 +10,11 @@ public class DisplayingArrays {
        for(int counter=0;counter<chars.length;counter++)
            counts[chars[counter]-0]++;
 
-       for(int count=0;count< counts.length;count++){
-           System.out.println(count+" "+counts[count]);
+       for(int count=0;count< counts.length;count++) {
+           if (count%10==0){
+               System.out.println();
+           }
+           System.out.print(counts[count]+" ");
        }
         return  null;
     }
@@ -73,7 +76,7 @@ public static void displayTwoByTwoArray(){
         System.out.println(sum);
     }
     public static void main(String[] args) {
-//        int[] randomLetters = {2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0};
+      int[] randomLetters = {2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0};
 ////        System.out.println(Arrays.toString(countLetters(randomLetters)));
 ////        System.out.println();
 ////        System.out.println(displayReverseNumbers(randomLetters));
@@ -98,7 +101,8 @@ public static void displayTwoByTwoArray(){
 
 //      displayTwoByTwoArray();
 //      displayTwoByTwoArray1();
-        displaySumInTwoDimensionalArray();
+      //  displaySumInTwoDimensionalArray();
+        countLetters(randomLetters);
         }
     }
 
