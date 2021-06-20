@@ -75,34 +75,47 @@ public static void displayTwoByTwoArray(){
             sum += array[i][0];
         System.out.println(sum);
     }
+    public static int[][] countLetters1(int[][] chars){
+
+        Scanner sc=new Scanner(System.in);
+       int[][]  counts =new int[5][10];
+        int count;
+        for(int counter=0;counter<chars.length;counter++) {
+
+            for (count = 0; count < chars[counter].length; count++) {
+
+            }
+        }
+            for(int counter=0;counter<chars.length;counter++){
+                for( count=0;count<chars[counter].length;count++){
+                    if(count%10==0){
+                        System.out.println();
+                    }
+                    System.out.print(chars[counter][count]+" ");
+                }
+
+            }
+
+
+        return  null;
+    }
+
+
+
     public static void main(String[] args) {
       int[] randomLetters = {2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0};
-////        System.out.println(Arrays.toString(countLetters(randomLetters)));
-////        System.out.println();
-////        System.out.println(displayReverseNumbers(randomLetters));
-//        Scanner scan = new Scanner(System.in);
-//        int[] myArr = new int[5];
-//        int number;
-//
-//        for(int counter = 0; counter < myArr.length; counter++) {
-//            System.out.print("Enter value between 1 to 100: ");
-//            number = scan.nextInt();
-//            if (!displayDistinctNumbers(myArr, number)) {
-//                myArr[counter] = number;
-//            } else {
-//                System.out.printf("Number %d Already exit!%n", number);
-//            }
-//        }
-//            for(int count = 0; count < myArr.length; count++){
-//                if(myArr[count] != 0){
-//                    System.out.print(myArr[count]+" ");
-//                }
-//            }
+//        System.out.println(countLetters(randomLetters));
 
-//      displayTwoByTwoArray();
-//      displayTwoByTwoArray1();
-      //  displaySumInTwoDimensionalArray();
-        countLetters(randomLetters);
+
+        int[] random={1,2,1,2,1,3,4,3,2,4,5,3,6,7,8,9,8};
+//        System.out.println(countLetters1(random));
+//int counter=0;
+//        while (counter<5){
+//            countLetters1(rating);
+//            counter++;
+//        }
+
+
         }
     }
 

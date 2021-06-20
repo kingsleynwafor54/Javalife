@@ -1,10 +1,10 @@
 package ChapterSeven;
 
 public class MovieLength {
-    public boolean isMovieLengthEqualsToAirLineTime( int[] airLineMovieThings ) {
-        int MovieLength=100;
-        int county=0;
-        int count=0;
+    public boolean isMovieLengthEqualsToAirLineTime( int[] airLineMovieThings, int MovieLength ) {
+
+        int SetOfMoviesYouCanWatch=0;
+        int count;
         boolean isTrue=false;
         for (int counter=0;counter<airLineMovieThings.length;counter++) {
 
@@ -12,7 +12,7 @@ public class MovieLength {
                 if (airLineMovieThings[counter] + airLineMovieThings[count] == MovieLength) {
                     System.out.println(counter + " " + (count));
                     isTrue = true;
-                    county++;
+                    SetOfMoviesYouCanWatch++;
 
 
 
@@ -20,7 +20,7 @@ public class MovieLength {
 
             }
         }
-        System.out.println(county);
+        System.out.println("You can choose from "+SetOfMoviesYouCanWatch+" set of movies");
         return isTrue;
     }
 

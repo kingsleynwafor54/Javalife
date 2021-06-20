@@ -24,8 +24,8 @@ public class MovieLengthTest {
 }
     @Test
     void movieLengthCanBeDetectedTest(){
-        int[] airLineMovieThings={50,50,50,10,40,70};
-       assertTrue(movieLength.isMovieLengthEqualsToAirLineTime(airLineMovieThings));
+        int[] airLineMovieThings={50,50,40,10,40,50};
+       assertTrue(movieLength.isMovieLengthEqualsToAirLineTime(airLineMovieThings,100));
 
     }
 }
