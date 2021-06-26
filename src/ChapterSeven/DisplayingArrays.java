@@ -104,18 +104,10 @@ public static void displayTwoByTwoArray(){
 
     public static void main(String[] args) {
       int[] randomLetters = {2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0,2,5, 6, 5, 4 ,3 ,23 ,43 ,2 ,0};
-//        System.out.println(countLetters(randomLetters));
+
 
 
         int[] random={1,2,1,2,1,3,4,3,2,4,5,3,6,7,8,9,8};
-//        System.out.println(countLetters1(random));
-//int counter=0;
-//        while (counter<5){
-//            countLetters1(rating);
-//            counter++;
-//        }
-
-
         }
     }
 

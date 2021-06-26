@@ -8,7 +8,10 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class EmployeeTest {
     @BeforeEach
@@ -53,4 +56,21 @@ public class EmployeeTest {
                         .get());
     }
 
+    @Test
+    void displayingEmployeesNamesTest1() {
+        Employee[] employees = {new Employee("Kingsley", "Nwafor", 1000000.00, "Physics"),
+                new Employee("John", "Kenedy", 200000.00, "computer science"),
+                new Employee("Ogbonna", "Kenedy", 200000.00, "Agric science"),
+                new Employee("Ogbonna", "Peter", 200000.00, "Radiological science"),
+        };
+        List<Employee> employees1 = Arrays.asList(employees);
+        Map<String, Long> stringLongMap =
+                employees1.stream()
+                        .collect(Collectors.groupingBy(Employee::getFirstName, Collectors.counting()));
+        stringLongMap.forEach(
+                (department, count) -> System.out.printf(
+                        "%s has %d employee(s)%n", department, count));
+
+
+    }
 }

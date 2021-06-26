@@ -66,7 +66,7 @@ public class InvoiceTest {
                 , new Invoice(23, "Wrench         ", 41, 41)};
 
         List<Invoice> invoiceList = Arrays.asList(invoice);
-        System.out.printf("%-8s %-8s %8s %-8s%n", "PartNumber ", "PartDesciption ", "Quantify ", "Price ");
+        System.out.printf("%-8s %-8s %8s %-8s%n", "PartNumber ", "PartDescription ", "Quantity ", "Price ");
         invoiceList.stream()
                 .sorted((Comparator.comparing(Invoice::getPartDescription)))
                 .forEach(System.out::println);
