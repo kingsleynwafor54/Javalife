@@ -25,7 +25,6 @@ public class AssignGrades {
             if (arr[counter] > bestScore) {
                 bestScore = arr[counter];
             }
-
         }
    return bestScore;
     }
