@@ -5,7 +5,7 @@ public class BaseCommissionEmployee extends CommissionEmployee{
 
 
 
-    public BaseCommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSale, double commissionSale){
+    public BaseCommissionEmployee(String firstName, String lastName, String socialSecurityNumber,  double grossSale,Double baseSalary ,double commissionSale){
         super(firstName,lastName,socialSecurityNumber,grossSale,commissionSale);
         if(baseSalary<0.0){
             throw new IllegalArgumentException("baseSalary can not be zero or negative");
