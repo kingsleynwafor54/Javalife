@@ -42,4 +42,11 @@ public class HourlyEmployee extends Employee {
             return getWage()*getHours();
         else return 40*getWage()+(getHours()-40)*getWage()*1.5;
     }
+    @Override
+    public String toString()
+    {
+        return String.format("hourly employee: %s%n%s: $%,.2f; %s: %,.2f",
+                super.toString(), "hourly wage", getWage(),
+                "hours worked", getHours());
+    }
 }
