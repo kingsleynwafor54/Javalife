@@ -10,6 +10,7 @@ public class BaseCommissionEmployee extends CommissionEmployee{
         if(baseSalary<0.0){
             throw new IllegalArgumentException("baseSalary can not be zero or negative");
         }
+        this.baseSalary=baseSalary;
 
     }
     public double getBaseSalary() {
@@ -32,5 +33,8 @@ public class BaseCommissionEmployee extends CommissionEmployee{
         return String.format("%s %s; %s: $%,.2f",
                 "base-salaried", super.toString(),
                 "base salary", getBaseSalary());
+
+
+
     }
 }

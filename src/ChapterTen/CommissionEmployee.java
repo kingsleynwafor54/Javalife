@@ -12,7 +12,8 @@ public class CommissionEmployee extends Employee {
         if (commissionSales < 0.0) {
             throw new IllegalArgumentException("commission cant be less than 0.0;");
         }
-
+        this.commissionSales=commissionSales;
+        this.grossSales=grossSales;
     }
 
     public double getGrossSales() {

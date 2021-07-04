@@ -1,5 +1,9 @@
 package ChapterTen;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class PayRollSystemTest {
     public static void main(String[] args) {
         SalariedEmployee salariedEmployee =
@@ -24,5 +28,27 @@ public class PayRollSystemTest {
         System.out.printf("%s%n%s: $%,.2f%n%n",
                 basePlusCommissionEmployee,
                 "earned", basePlusCommissionEmployee.earnings());
+        //creating four-element Employee arrays
+        Scanner scanner=new Scanner(System.in);
+//        List<Employee> employeeList=new ArrayList<>();
+
+        Employee [] employees=new Employee[4];
+        employees[0]=salariedEmployee;
+        employees[1]=hourlyEmployee;
+        employees[2]=basePlusCommissionEmployee;
+        employees[3]=commissionEmployee;
+        for(int counter=0;counter<employees.length;counter++){
+
+            System.out.println(employees[counter]);
+            if (employees[counter] instanceof BaseCommissionEmployee){
+                BaseCommissionEmployee employee=(BaseCommissionEmployee) employees[counter];
+                employee.setBaseSalary(1.0*employee.getBaseSalary());
+               System.out.printf("%,.2f%n",employee.getBaseSalary());
+            }
+            System.out.printf(":$%,.2f%n",employees[counter].earnings());
+        }
+    for (int counter =0;counter<employees.length;counter++){
+        System.out.println(employees[counter].getClass().getName());
+        }
     }
 }
