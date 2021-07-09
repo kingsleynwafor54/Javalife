@@ -2,8 +2,7 @@ package Kata;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+
 
 public class IndexSearch {
     ArrayList<Integer> list1=new ArrayList<>();
@@ -23,13 +22,13 @@ public class IndexSearch {
          System.out.println(Arrays.toString(numb));
      }
      else
-         System.out.println(list1);
+         System.out.printf("%s%d%s%d%s%n","[",list1.get(0),",",list1.get(list1.size()-1),"]");
   }
 
     public static void main(String[] args) {
 
       IndexSearch indexSearch=new IndexSearch();
-      int [] arrays={2,4,3,4,4,5,6,7,8};
-      indexSearch.FindingTheStartAndEndOfANumberAfterSortingAnArray(arrays,1);
+      int [] arrays={8,4,3,4,4,5,6,7,8};
+      indexSearch.FindingTheStartAndEndOfANumberAfterSortingAnArray(arrays,4);
     }
 }
