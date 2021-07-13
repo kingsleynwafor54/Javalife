@@ -14,5 +14,9 @@ public class StringBuilderChars {
         for (int counter =0;counter<charArray.length;counter++){
             System.out.print(charArray[counter]+"");
         }
+        System.out.println();
+        buffer.setCharAt(0,'h');
+        buffer.setCharAt(6,'T');
+        System.out.printf("%s%n",buffer.toString());
     }
 }
