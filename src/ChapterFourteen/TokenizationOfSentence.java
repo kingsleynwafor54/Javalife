@@ -15,5 +15,6 @@ public class TokenizationOfSentence {
 
     public static void main(String[] args) {
         tokenizationOfSentence("hello,from,the,other,side");
+
     }
 }
