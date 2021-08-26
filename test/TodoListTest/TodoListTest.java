@@ -17,12 +17,18 @@ public class TodoListTest {
         WritingBoard writingBoard;
         IdGenerator idGenerator;
         IdGenerator idGenerator2;
+        IdGenerator idGenerator3;
+        IdGenerator idGenerator4;
+        IdGenerator idGenerator5;
         @BeforeEach
         void setUp() {
            user =new User();
            writingBoard=new WritingBoard();
            idGenerator=new IdGenerator();
            idGenerator2=new IdGenerator();
+           idGenerator3=new IdGenerator();
+           idGenerator4=new IdGenerator();
+           idGenerator5=new IdGenerator();
         }
         @AfterEach
         void tearDown() {
@@ -47,10 +53,16 @@ public class TodoListTest {
     void testTheIdGeneratorBankExist(){
         assertNotNull(idGenerator);
 }
+
   @Test
   void testThatIdGeneratorBankCanGenerateId(){
-      System.out.println(idGenerator.getId());
-      System.out.println(idGenerator2.getId());
+
+      
+      assertEquals(1,idGenerator.getId());
+      assertEquals(2,idGenerator2.getId());
+      assertEquals(3,idGenerator3.getId());
+      assertEquals(4,idGenerator4.getId());
+      assertEquals(5,idGenerator5.getId());
   }
 
     }
