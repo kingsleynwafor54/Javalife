@@ -26,10 +26,18 @@ public class LambdaPractices {
 
         System.out.printf("Time 2 of 1 through a 10  and multiplying by 3 = %d%n",
                 IntStream.rangeClosed(1,10)
-                        .filter(x-> x%2==0)
-                        .map(x->x*3)
+                        .filter((x)-> x%2==0)
+                        .map((x)->x*3)
                         .sum());
 
+        IntStream.rangeClosed(1,10)
+                .filter(value -> value % 2 != 0)
+                .map(value -> value * 10)
+                .sorted()
+                .forEach(value -> System.out.printf("%d ", value));
+
+
+        
         //    using internal
         // This an example of reduction
 
