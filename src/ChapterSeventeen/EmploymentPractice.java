@@ -2,8 +2,12 @@ package ChapterSeventeen;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 public class EmploymentPractice {
@@ -54,8 +58,23 @@ public class EmploymentPractice {
                 .distinct()
                 .sorted()
                 .forEach(System.out::println);
+        //How to group an object using Lambdas
 
+        Map<String , List<Employee>> groupedByDepartment= list.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment));
+        groupedByDepartment.forEach(
+                (department,employeesInDepartment)->
+                {
+                    System.out.println(department);
+                    employeesInDepartment.forEach(
+                            employee -> System.out.printf(" %s%n", employee));
+                }
+        );
 
+        System.out.println(   IntStream.rangeClosed(1,2)
+                .mapToDouble(x->x+1.0)
+                .sum());
     }
+
 }
 
