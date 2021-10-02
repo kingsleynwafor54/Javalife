@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArrangementWords {
     public static void main(String[] args) {
-        String word = "a3 boy4 i2s this1 hte5 tyt7 dkdk6jfjjf jfdld9 djdj8ddh";
+        String word = "a3 boy4 i2s this1 hte5 tyt7 dkdk6jfjjf ";
         String[] words = word.split(" ");
         String[] word1 = new String[words.length];
         System.out.println(Arrays.toString(words));
